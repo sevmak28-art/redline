@@ -1,0 +1,23 @@
+REDLINE 3.2 — ОТЧЁТ ПРОВЕРКИ
+============================
+
+Автоматические проверки:
+- Python compile (server.py): PASS
+- Unit tests: 11/11 PASS
+- JavaScript syntax (assets/app.js): PASS
+- Render Blueprint YAML parse: PASS
+
+Интеграционный smoke test (локально на платформенном PORT):
+- GET /api/health: HTTP 200, JSON ok=true — PASS
+- Главная страница /: HTTP 200 — PASS
+- Все 51 HTML-страницы: HTTP 200 — PASS
+- canonical URL из REDLINE_PUBLIC_URL: PASS
+- X-Content-Type-Options и остальные защитные заголовки: PASS
+- Strict-Transport-Security при X-Forwarded-Proto: https: PASS
+- sitemap.xml использует HTTPS публичного домена: PASS
+- robots.txt ссылается на динамический sitemap.xml: PASS
+
+Ограничения:
+- Тестирование выполнено локально, а не на реальном аккаунте Render.
+- DNS, реальный домен, выпуск сертификата и внешний доступ будут проверены после создания сервиса и добавления домена в Render.
+- Сторонние API/JSON-выгрузки автомобильных площадок не предоставлены и остаются отключёнными.

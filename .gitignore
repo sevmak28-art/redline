@@ -1,0 +1,5 @@
+server_data/
+__pycache__/
+*.pyc
+providers.local.json
+.env

@@ -1,0 +1,23 @@
+REDLINE LIVE LISTINGS — INTEGRATION STATUS
+==========================================
+
+Backend status: IMPLEMENTED AND TESTED
+Marketplace feeds: NOT YET AUTHORIZED / NOT CONNECTED
+Enabled providers: 0
+Live records: 0 (no test or invented ads are published)
+
+Why live listings are not switched on automatically:
+- No official API keys or partner JSON/XML feeds were supplied to this project.
+- MyAuto's current user agreement prohibits automated bot collection without the site's permission.
+- GARAJ limits seller phone/WhatsApp visibility to logged-in users and states that photos remain owned by their uploaders; its licence to display them is granted to GARAJ itself.
+- Turbo.kg says it intentionally hides phones and redirects buyers to original source listings.
+
+To activate a provider:
+1. Ask the marketplace for an official feed/API and written permission for the exact fields REDLINE will display.
+2. Get a feed endpoint, credentials, rate limits, and confirmation for photo and contact reuse.
+3. Put the endpoint and allowed domains into providers.json; keep API tokens in environment variables.
+4. Enable that provider and restart server.py.
+
+The backend then polls every 10 minutes by default. A listing is public only when its source confirms status=active, checkedAt is within 15 minutes, expiresAt has not passed, and the source URL is HTTPS. Missing, sold, stale, or expired records are hidden. Photos and phones each require independent permission flags.
+
+See docs/API-CONNECTOR.md for the feed schema and docs/PARTNER-REQUEST.md for a partner-access request template.

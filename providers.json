@@ -1,0 +1,82 @@
+{
+  "providers": [
+    {
+      "id": "mashina",
+      "name": "Mashina.kg",
+      "enabled": false,
+      "feed_url": "",
+      "token_env": "MASHINA_API_TOKEN",
+      "source_domains": ["mashina.kg", "www.mashina.kg"],
+      "photo_domains": ["mashina.kg", "www.mashina.kg", "static.mashina.kg"],
+      "photo_reuse_allowed": false,
+      "phone_reuse_allowed": false,
+      "contact_link_allowed": true,
+      "max_age_minutes": 15
+    },
+    {
+      "id": "garaj",
+      "name": "GARAJ.KG",
+      "enabled": false,
+      "feed_url": "",
+      "token_env": "GARAJ_API_TOKEN",
+      "source_domains": ["garaj.kg", "www.garaj.kg"],
+      "photo_domains": ["garaj.kg", "www.garaj.kg"],
+      "photo_reuse_allowed": false,
+      "phone_reuse_allowed": false,
+      "contact_link_allowed": true,
+      "max_age_minutes": 15
+    },
+    {
+      "id": "myauto",
+      "name": "MyAuto",
+      "enabled": false,
+      "feed_url": "",
+      "token_env": "MYAUTO_API_TOKEN",
+      "source_domains": ["myauto.kg", "www.myauto.kg"],
+      "photo_domains": ["myauto.kg", "www.myauto.kg"],
+      "photo_reuse_allowed": false,
+      "phone_reuse_allowed": false,
+      "contact_link_allowed": true,
+      "max_age_minutes": 15
+    },
+    {
+      "id": "tapcar",
+      "name": "TapCar",
+      "enabled": false,
+      "feed_url": "",
+      "token_env": "TAPCAR_API_TOKEN",
+      "source_domains": ["tapcar.kg", "www.tapcar.kg"],
+      "photo_domains": ["tapcar.kg", "www.tapcar.kg"],
+      "photo_reuse_allowed": false,
+      "phone_reuse_allowed": false,
+      "contact_link_allowed": true,
+      "max_age_minutes": 15
+    },
+    {
+      "id": "lalafo",
+      "name": "Lalafo Кыргызстан",
+      "enabled": false,
+      "feed_url": "",
+      "token_env": "LALAFO_API_TOKEN",
+      "source_domains": ["lalafo.kg", "www.lalafo.kg"],
+      "photo_domains": ["lalafo.kg", "www.lalafo.kg"],
+      "photo_reuse_allowed": false,
+      "phone_reuse_allowed": false,
+      "contact_link_allowed": true,
+      "max_age_minutes": 15
+    },
+    {
+      "id": "transport",
+      "name": "Transport.kg",
+      "enabled": false,
+      "feed_url": "",
+      "token_env": "TRANSPORT_API_TOKEN",
+      "source_domains": ["transport.kg", "www.transport.kg"],
+      "photo_domains": ["transport.kg", "www.transport.kg"],
+      "photo_reuse_allowed": false,
+      "phone_reuse_allowed": false,
+      "contact_link_allowed": true,
+      "max_age_minutes": 15
+    }
+  ]
+}

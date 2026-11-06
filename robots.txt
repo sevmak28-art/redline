@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /api/
+# Replace YOUR-DOMAIN after connecting a domain and publishing.
+Sitemap: https://YOUR-DOMAIN/sitemap.xml
