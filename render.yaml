@@ -3,20 +3,16 @@ services:
     name: redline-auto-portal
     runtime: python
     region: singapore
-    plan: 0.5c-512mb
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python server.py
     healthCheckPath: /api/health
     autoDeployTrigger: checksPass
-    disk:
-      name: redline-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: REDLINE_HOST
         value: 0.0.0.0
       - key: REDLINE_DATA_DIR
-        value: /var/data
+        value: /tmp/redline-data
       - key: REDLINE_POLL_SECONDS
         value: "600"
       - key: REDLINE_ADMIN_TOKEN
